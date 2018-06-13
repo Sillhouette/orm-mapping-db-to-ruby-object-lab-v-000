@@ -57,8 +57,11 @@ class Student
 
   end
 
-  def self.all?
-
+  def self.all
+    sql = "SELECT * FROM students"
+    DB[:conn].execute(sql, name).map { |row|
+      self.new_from_db(row)
+    }
   end
 
   def self.first_X_students_in_grade_10
