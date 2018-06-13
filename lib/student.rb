@@ -82,9 +82,9 @@ class Student
     count = 0
     self.all.each { |student|
       if student.grade.to_i == 10
-        while count < selection {
+        while count < selection do
           students << student
-        }
+        end
       end
     }
     students
