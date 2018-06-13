@@ -53,7 +53,6 @@ class Student
   def self.count_all_students_in_grade_9
     students = []
     self.all.each { |student|
-      binding.pry
       if student.grade == "9"
         students << student
       end
