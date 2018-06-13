@@ -61,7 +61,13 @@ class Student
   end
 
   def self.students_below_12th_grade
-
+    students = []
+    self.all.each { |student|
+      if student.grade.to_i < 12
+        students << student
+      end
+    }
+    students
   end
 
   def self.all
