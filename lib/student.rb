@@ -54,7 +54,7 @@ class Student
     students = []
     self.all.each { |student|
       binding.pry
-      if student.grade == "9th"
+      if student.grade == "9"
         students << student
       end
     }
