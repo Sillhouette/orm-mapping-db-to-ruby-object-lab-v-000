@@ -56,7 +56,7 @@ class Student
         students << student
       end
     }
-    count
+    students
   end
 
   def self.students_below_12th_grade
