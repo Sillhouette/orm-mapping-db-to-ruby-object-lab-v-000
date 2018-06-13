@@ -50,7 +50,12 @@ class Student
   end
 
   def self.count_all_students_in_grade_9
-
+    count = 0
+    self.all.each {|student|
+      if student.grade == "9th"
+        count += 1
+    }
+    count
   end
 
   def self.students_below_12th_grade
