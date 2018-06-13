@@ -50,10 +50,10 @@ class Student
   end
 
   def self.count_all_students_in_grade_9
-    count = 0
+    students = []
     self.all.each { |student|
       if student.grade == "9th"
-        count += 1
+        students << student
       end
     }
     count
